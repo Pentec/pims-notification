@@ -1,1 +1,43 @@
+{
+  "name": "pims-notification",
+  "version": "0.0.1",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "unit.js": "^1.1.3"
+  },
+  "main": "./notifications.js",
+  "_id": "pims-notification@0.0.1",
+  "_shasum": "",
+  "_from": "pims-notification@>=0.0.1",
+  "_npmVersion": "1.4.23",
+  "_npmUser": {
+    "name": "ruth ojo",
+    "email": "u12042804@tuks.co.za"
+  },
+  "homepage": "https://github.com/Pentec/pims-notification",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Pentec/pims-notification.git"
+  },
+  "maintainers": [
+    {
+      "name": "ruth ojo",
+      "email": "u12042804@tuks.co.za"
+    }
+  ],
+  "dist": {
+    "shasum": "",
+    "tarball": "http://localhost:4873/pims-notification/-/pims-notification-0.0.1.tgz"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873/"
+  },
+  "_resolved": "http://localhost:4873/pims-notification/-/pims-notification-0.0.1.tgz",
+  "readme": "README.md",
+  "bugs": {
+    "url": "https://github.com/Pentec/pims-notification/issues"
+  },
+  "description": "README.md"
+}
 
