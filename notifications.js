@@ -13,13 +13,11 @@ var findPatient = function(patientid, callback) {
 
         if(found) {
             sendTo = found.email_address;
-            console.log("Email \n" + sendTo);
             return callback(sendTo);
 
         }
         else
         {
-            console.log("Not Found!!");
             sendTo = "";
             return callback(sendTo);
         }
@@ -59,5 +57,4 @@ var sendEmail = function(email, msg, patientname){
 
 module.exports.findPatient = findPatient;
 module.exports.sendEmail = sendEmail;
-
 
