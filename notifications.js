@@ -1,11 +1,23 @@
 var mongoose = require('mongoose');
 var nodemailer = require('nodemailer');
+var Schema   = mongoose.Schema;
+
+var Patient = new Schema({
+    patient_name			: String,
+    patient_surname			: String,
+    contact_number			: Number,
+    email_address			: String,
+    physical_address		: String
+});
+
+
+mongoose.model('patients', Patient);
+var Patient = mongoose.model('patients');
 
 var findPatient = function(patientid, callback) {
     var sendTo = "";
 
-    var user = mongoose.model('patients');
-    user.findOne({patient_name: patientid}, function(err, found){
+    Patient.findOne({patient_name: patientid}, function(err, found){
         if(err) {
             console.log("DB error");
             callback(err);
@@ -49,7 +61,10 @@ var sendEmail = function(email, msg, patientname){
         if(err) {
             return console.log(err);
         }
-        console.log('Mesg sent: ' + info.response);
+        else{
+            console.log('Mesg sent: ' + info.response);
+            //redirect
+        }
 
     });
 
